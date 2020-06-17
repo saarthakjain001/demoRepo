@@ -55,7 +55,7 @@ public class SessionServiceImpl implements SessionService {
         return session;
     }
 
-    //TODO Use java streams to optimise the code
+    //TODO 16/7/2020 Use java streams to optimise the code
     @Override
     public Sessions validateSession(Long sessionId) {
         if (sesrepository.findByIdAndStatus(sessionId, statusValues.ACTIVE) == null)

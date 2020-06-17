@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService {
 
     }
 
-//TODO ensure that the same user does not already exist
+//TODO 15/7/2020 ensure that the same user does not already exist
     @Override
     public UserDetails AddUser(UserDetails user) {
         return repository.save(user);
